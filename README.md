@@ -1,7 +1,7 @@
 # socket
 Python-like socket libary for GO
 
-#How to use
+# How to use
 TCP server
 ``` go
 socket := NewTCPsocket(AF_INET4)
