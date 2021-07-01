@@ -2,7 +2,8 @@
 Python-like socket libary for GO
 
 #How to use
-``` TCP server
+TCP server
+``` go
 socket := NewTCPsocket(AF_INET4)
 socket.Bind([]byte{127, 0 , 0, 1}, 6900)
 socket.Listen()
@@ -15,7 +16,8 @@ for{
 	fmt.Println(string(data))
 }
 ```
-```TCP client
+TCP client
+``` go
 socket := NewTCPsocket(AF_INET4)
 socket.Connect([]byte{127, 0 , 0, 1}, 6900)
 
